@@ -8,6 +8,7 @@
 	<typeAliases>
 		<typeAlias type="com.spring.ex01.MemberVO" alias="memberVO" />
 		<typeAlias type="com.spring.ex03.MemberVO" alias="memberVO3" />
+		<typeAlias type="com.spring.ex05.MemberDTO" alias="memDTO" />
 	</typeAliases>
 	
 	<environments default="development">
