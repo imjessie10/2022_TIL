@@ -1,0 +1,28 @@
+pom.xml
+      <!-- Spring Test -->
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring-test</artifactId>
+         <version>${org.springframework-version}</version>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>4.0.1</version>
+          <scope>provided</scope>
+      </dependency>
+
+-빌드패스해야함
+
+@RunWith(SpringJUnit4ClassRunner.class)
+
+@WebAppConfiguration 
+
+@ContextConfiguration( // 사용할 bean들과 scan할 패키지 로딩
+  locations = {"file:src/main/webapp/WEB-INF/spring/action-mybatis.xml"
+    ,"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"
+  })
+
+[휴먼] https://www.nextree.co.kr/p11104/
+
+
